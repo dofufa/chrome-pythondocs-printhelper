@@ -1,0 +1,22 @@
+/* ext.css */
+/*
+  DEVELOPER NOTES
+
+  19 March 2024
+
+  ISSUE
+  The navigation bar at the top of each Python docs
+  web page obstructs content at the top of the
+  printed pages.
+
+  SOLUTION
+  This following CSS media query hides the search bar
+  that appears at the top of every printed page.
+*/
+@media print {
+  .mobile-nav {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
