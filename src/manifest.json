@@ -1,0 +1,27 @@
+{
+  "name": "pythondocs-printhelper",
+  "version": "0.1",
+  "description": "Hides the navigation bar at the top of each printed Python docs page",
+
+  "icons": {
+    "16": "icon/icon16.png",
+    "32": "icon/icon32.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+
+  "content_scripts" : [
+    {
+
+    "matches" : [
+      "https://docs.python.org/*"
+      ],
+
+    "css" : [
+      "css/ext.css"
+      ]
+    }
+  ],
+
+  "manifest_version": 3
+}
